@@ -14,3 +14,32 @@ canvas[resize] {
 * {
   cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1046.cur), auto;
 }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  display: inline-block;
+}
+@media (orientation: portrait) {
+  section {
+    display: flex;
+  }
+  canvas {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  section {
+    display: none;
+  }
+  canvas {
+    display: block;
+  }
+}
